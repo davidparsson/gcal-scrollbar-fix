@@ -1,0 +1,17 @@
+{
+  "name": "Google Calendar scrollbar fix",
+  "version": "1.0",
+  "description": "Removes the unnecessary scrollbar in Google Calendar.",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*.google.com/calendar/*",
+        "https://*.google.com/calendar/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}

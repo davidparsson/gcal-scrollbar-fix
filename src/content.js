@@ -1,3 +1,3 @@
-var hideElement = document.createElement('style');
-hideElement.innerText = "object[type=\'application/x-googlegears\'] { position: absolute; };";
-document.documentElement.insertBefore(hideElement, null);
+var gGalScrollbarFixStyle = document.createElement('style');
+gGalScrollbarFixStyle.innerText = "object[type=\'application/x-googlegears\'] { position: absolute; };";
+document.documentElement.insertBefore(gGalScrollbarFixStyle, null);
